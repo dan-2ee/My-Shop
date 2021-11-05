@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:layout_weight="1"
+        android:text="earpearp.com"
+        android:textAllCaps="true"
+        android:textColor="#004097"
+        android:textSize="35sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/ID"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/app"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:hint="ID"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/PW"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ID"
+        android:layout_centerInParent="true"
+        android:inputType="textPassword"
+        android:hint="PW" />
+
+    <Button
+        android:id="@+id/Login_Btn"
+        android:layout_width="98dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/PW"
+        android:layout_alignLeft="@+id/PW"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FF778899"
+        android:text="Login"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Join_Btn"
+        android:layout_width="98dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/PW"
+        android:layout_alignRight="@+id/PW"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="43dp"
+        android:backgroundTint="#FF778899"
+        android:text="Join Us"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Goods_Btn"
+        android:layout_width="240dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/Join_Btn"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#004097"
+        android:text="ALL GOODS"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/Goods_Btn"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/earpicon">
+    </ImageView>
+
+</RelativeLayout>

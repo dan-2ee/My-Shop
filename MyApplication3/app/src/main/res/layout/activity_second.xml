@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Second">
+
+    <TextView
+        android:id="@+id/Join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:text="JOIN"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/Join_ID"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:hint="ID" />
+        <Button
+            android:id="@+id/ID_Check_btn"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="#004097"
+            android:text="Check ID"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/Join_PW"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:hint="PW" />
+        <Button
+            android:id="@+id/PW_Check_btn"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="#004097"
+            android:text="Check PW"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Join_Name"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:hint="Enter your Name" />
+    <EditText
+        android:id="@+id/Join_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter your Phone Number" />
+    <EditText
+        android:id="@+id/Join_Address"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter your Address" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Personal_Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="개인정보 사용 동의 "
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/show_Btn"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:backgroundTint="#004097"
+            android:text="약관 보기 "
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/clause_Group">
+        <RadioButton
+            android:id="@+id/Accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Accept"
+            android:textSize="16sp"
+            android:textStyle="italic">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/Decline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Decline"
+            android:textSize="16sp"
+            android:textStyle="italic">
+        </RadioButton>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/join_complete_Btn"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="55dp"
+            android:backgroundTint="#a5a8b0"
+            android:text="join"
+            android:textSize="17sp"
+            android:textStyle="bold">
+        </Button>
+        <Button
+            android:id="@+id/join_back_Btn"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:backgroundTint="#a5a8b0"
+            android:text="back"
+            android:textSize="17sp"
+            android:textStyle="bold">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
